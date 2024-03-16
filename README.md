@@ -5,6 +5,9 @@
 # 01. Overview
   - Five-minute overview providing context, stating the problem the paper is addressing, characterizing the approach, and giving a brief account of how the problem was addressed.
   - The paper, titled "Code Llama: Open Foundation Models for Code," presents Code Llama, a family of large language models specifically designed for code generation and infilling tasks. These models, derived from Llama 2, aim to provide state-of-the-art performance in code-related tasks, including code completion and generation in multiple programming languages, especially Python.
+
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b59e0111-5b00-4268-ab58-7cc02feb187c)
+
 ## Context and Problem Addressed
   - The motivation behind Code Llama stems from the increasing proficiency of large language models (LLMs) in various applications, particularly those involving a blend of natural and domain-specific language. In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent. However, the challenge lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
 ## Approach
