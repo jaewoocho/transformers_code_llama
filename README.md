@@ -1,3 +1,5 @@
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/364cc4ae-723c-49d0-831b-871af67797cc)
+
 # 00.transformers_code_llama
 
 # 01. Overview
