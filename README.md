@@ -109,6 +109,7 @@ A) Greatly reduce learning curve: Infilling in models like Code Llama can provid
 
 # 06. Code Demonstration
   - Make a Jupyter notebook demonstrating using the model/approach
+  - 
 # 07. Paper Citation
   - Paper Title: Code Llama: Open Foundation Models for Code
   - Authors: Baptiste Rozière† , Jonas Gehring† , Fabian Gloeckle†,∗ , Sten Sootla† , Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, Jérémy Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, Wenhan Xiong, Alexandre Défossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve†
@@ -120,6 +121,7 @@ A) Greatly reduce learning curve: Infilling in models like Code Llama can provid
   - Introducing Code Llama, a state-of-the-art large language model for coding: https://ai.meta.com/blog/code-llama-large-language-model-coding/
   - About Code Llama: https://codellama.dev/about
   - Code Llama on Huggingface: https://huggingface.co/codellama
+  - Code Llama access: https://huggingface.co/codellama/CodeLlama-7b-hf
   - How To Use Code Llama: https://www.codecademy.com/article/how-to-use-code-llama
   - Papers Explained 62: Code Llama: https://medium.com/dair-ai/papers-explained-62-code-llama-ee266bfa495f
 
