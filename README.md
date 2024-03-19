@@ -6,7 +6,8 @@ https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-
 # 01. Overview
   - The paper, titled "Code Llama: Open Foundation Models for Code," presents Code Llama, a family of large language models specifically designed for code generation and infilling tasks. These models, derived from Llama 2, aim to provide state-of-the-art performance in code-related tasks, including code completion and generation in multiple programming languages, especially Python.
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b59e0111-5b00-4268-ab58-7cc02feb187c)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b564e8e8-d427-4089-90bb-a2efa6a8378c)
+
 
 The major topic of the paper is to introduce these three opensource models to be specialized in programming and specific tasks
 1. Code Llama
@@ -21,7 +22,8 @@ The major topic of the paper is to introduce these three opensource models to be
 
 ## Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/ea6714e5-9c06-4cea-853a-49cf9dc033a1)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
+
 
 
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
@@ -40,7 +42,7 @@ The major topic of the paper is to introduce these three opensource models to be
 
 1. Python Code Generation: Code Llama passes scores on the Human Eval, MBPP, APPS
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/2caaf9b9-debb-4b50-b71d-425c42e5f69d)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c4c5af2e-8793-4b27-8fbe-5be217e96226)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/7066f815-2d46-47bf-aef9-c90fc38dc40e)
 
 
