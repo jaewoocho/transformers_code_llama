@@ -142,7 +142,7 @@ A) Greatly reduce learning curve: Infilling in models like Code Llama can provid
   - In summary, while "Code Llama" marks a significant step forward in LLMs for coding, it could be improved with a more in-depth and nuanced discussion on ethical and safety aspects, considering the potential risks and societal impact of such advanced code-generating AI systems.
 
 # 06. Code Demonstration
-  - Make a Jupyter notebook demonstrating using the model/approach
+  - Google Colab: https://colab.research.google.com/drive/1xeWWt2jV1yqkxPMTO1U98wX5LQl9d9Pr?usp=sharing 
     
 # 07. Paper Citation
   - Paper Title: Code Llama: Open Foundation Models for Code
