@@ -16,13 +16,18 @@ The major topic of the paper is to introduce these three opensource models to be
    
 ## Context and Problem Addressed
   - The motivation behind Code Llama stems from the increasing proficiency of large language models (LLMs) in various applications, particularly those involving a blend of natural and domain-specific language. In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent. However, the challenge lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
+
 ## Approach
   - The authors approach this problem by building on the Llama 2 model, applying a series of training and fine-tuning steps. This includes code-training from foundation models, introducing an infilling training regime, and fine-tuning for handling long input contexts. Another key aspect is instruction fine-tuning, which improves the model's safety, helpfulness, and ability to follow instructions.
+
 ## Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b3f95eef-e2ab-4bf8-a9b3-257776acc23a)
+
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
+
 3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
+
 4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/d561b45c-cb94-4354-8e73-84807e4dcf9a)
 
@@ -30,17 +35,21 @@ The major topic of the paper is to introduce these three opensource models to be
 - Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
 
 1. Python Code Generation: Code Llama passes scores on the Human Eval, MBPP, APPS
+
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/335983f5-46db-4cda-88b2-ec408934cbec)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/dd4b63a1-9dbf-4622-896a-9c012cac7464)
 
 2. Multilingual evaluation
+
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/2f7bd6c3-9009-4696-88bd-3257eef7d98f)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/f64b9a0c-e149-4f6f-98ff-6561194daa09)
 
 3. Infilling evaluations
+
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/efece19b-b938-43ac-a691-69420dd76f84)
 
-4. Long context evaluations
+5. Long context evaluations
+
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/1dee7177-6345-4926-91b1-152bffc0db15)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e9cf2fda-10e1-4915-87a9-327986c3f2fd)
 
