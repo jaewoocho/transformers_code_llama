@@ -21,7 +21,8 @@ The major topic of the paper is to introduce these three opensource models to be
 
 ## Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b3f95eef-e2ab-4bf8-a9b3-257776acc23a)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/ea6714e5-9c06-4cea-853a-49cf9dc033a1)
+
 
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/fea6a9ff-8135-483e-81c5-0d0fbbc124d5)
