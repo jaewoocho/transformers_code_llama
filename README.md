@@ -9,7 +9,7 @@ https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b564e8e8-d427-4089-90bb-a2efa6a8378c)
 
 
-The major topic of the paper is to introduce these three opensource models to be specialized in programming and specific tasks
+The major topic of the paper is to introduce these three opensource models to be specialized in programming and specific languages like Python
 1. Code Llama
 2. Code Llama -Instruct
 3. Code Llama -Python
