@@ -1,7 +1,7 @@
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/364cc4ae-723c-49d0-831b-871af67797cc)
 
 # 00. Code Llama: Open Foundation Models for Code - Meta AI 
-[https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/]
+https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
 
 # 01. Overview
   - Five-minute overview providing context, stating the problem the paper is addressing, characterizing the approach, and giving a brief account of how the problem was addressed.
