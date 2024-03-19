@@ -45,7 +45,7 @@ The major topic of the paper is to introduce these three opensource models to be
 
 2. Multilingual evaluation
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/2f7bd6c3-9009-4696-88bd-3257eef7d98f)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/9ce81426-31fd-498c-8990-2a85d3bd3f15)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/f64b9a0c-e149-4f6f-98ff-6561194daa09)
 
 3. Infilling evaluations
