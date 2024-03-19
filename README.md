@@ -19,12 +19,31 @@ The major topic of the paper is to introduce these three opensource models to be
 ## Approach
   - The authors approach this problem by building on the Llama 2 model, applying a series of training and fine-tuning steps. This includes code-training from foundation models, introducing an infilling training regime, and fine-tuning for handling long input contexts. Another key aspect is instruction fine-tuning, which improves the model's safety, helpfulness, and ability to follow instructions.
 ## Solution and Implementation
-### 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
-### 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
-### 3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
-### 4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
+1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b3f95eef-e2ab-4bf8-a9b3-257776acc23a)
+2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
+3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
+4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/d561b45c-cb94-4354-8e73-84807e4dcf9a)
+
 ## Results 
 - Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
+
+1. Python Code Generation: Code Llama passes scores on the Human Eval, MBPP, APPS
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/335983f5-46db-4cda-88b2-ec408934cbec)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/dd4b63a1-9dbf-4622-896a-9c012cac7464)
+
+2. Multilingual evaluation
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/2f7bd6c3-9009-4696-88bd-3257eef7d98f)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/f64b9a0c-e149-4f6f-98ff-6561194daa09)
+
+3. Infilling evaluations
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/efece19b-b938-43ac-a691-69420dd76f84)
+
+4. Long context evaluations
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/1dee7177-6345-4926-91b1-152bffc0db15)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e9cf2fda-10e1-4915-87a9-327986c3f2fd)
+
 
 # 02. Discussion Question for the Class: #1
   - Do you think foundation models primarily offer a benefit in "Efficiency" or "Versatility" when specialized for tasks like code generation?
@@ -106,7 +125,7 @@ A) Greatly reduce learning curve: Infilling in models like Code Llama can provid
 
 # 05. Critical Analysis
   - Answer one or more of the following questions: What was overlooked by the authors? What could have been developed further? Were there any errors? Have others disputed the findings?
-  - In a critical analysis of the "Code Llama" paper, the most significant area that appears to have been overlooked or warrants further development is the Depth of Safety and Ethical Considerations:
+  - In a critical analysis of the "Code Llama" paper, the most significant area that appears to have been overlooked or warrants further development is the Depth of Responsible AI and Safety Considerations:
   - Potential Oversight: While the paper briefly touches upon responsible AI and safety measures, it doesn't delve deeply into the complex ethical implications and potential risks associated with advanced code-generating models. Given the capability of Code Llama to produce complex code, the nuances of how this might be exploited for unethical purposes (like creating malware) or lead to unintentional biases in code generation are not exhaustively explored.
   - Further Development Needed: The paper could benefit from a more detailed exploration of the mechanisms and strategies implemented to prevent the generation of harmful or unethical code. This includes discussing how the model detects and handles requests for malicious code, how it's trained to avoid introducing security vulnerabilities, and what measures are in place to ensure the fairness and unbiased nature of its code outputs.
   - Lack of Empirical Evidence: There seems to be a lack of extensive empirical evidence demonstrating the model's response in ethically ambiguous or high-risk scenarios. Including detailed case studies or testing the model against a set of ethically challenging prompts could provide greater insight into its safety features.
@@ -115,7 +134,7 @@ A) Greatly reduce learning curve: Infilling in models like Code Llama can provid
 
 # 06. Code Demonstration
   - Make a Jupyter notebook demonstrating using the model/approach
-  - 
+    
 # 07. Paper Citation
   - Paper Title: Code Llama: Open Foundation Models for Code
   - Authors: Baptiste Rozière† , Jonas Gehring† , Fabian Gloeckle†,∗ , Sten Sootla† , Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, Jérémy Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, Wenhan Xiong, Alexandre Défossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve†
