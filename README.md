@@ -60,8 +60,16 @@ The major topic of the paper is to introduce these three opensource models to be
     - B) Versatility
     - C) Both Efficiency & Versatility
 
-  C) both: The answer is both "Efficiency" and "Versatility". Foundation models provide efficiency by saving time and computational resources as they are already trained on extensive datasets. They offer versatility due to their broad knowledge base, which is crucial for tasks that blend natural language processing with specialized domains like coding.
   
+<details>
+    <summary>Answer: </summary>
+  
+    C) both: The answer is both "Efficiency" and "Versatility". 
+    Foundation models provide efficiency by saving time and computational resources as they are already trained on extensive datasets. 
+    They offer versatility due to their broad knowledge base, which is crucial for tasks that blend natural language processing with specialized domains like coding.
+
+</details>
+
 # 03. Archiecture Overview
   - Prepare a formal pseudocode description of the proposed model, indicate how it differs from previous models
 ---
@@ -129,8 +137,14 @@ Key Differences from Previous Models:
   - B) No significant impact
   - C) Increase reliance on AI
   - D) Potentially hinder learning
+<details>
+    <summary>Answer: </summary>
+    
+    A) Greatly reduce learning curve
+    
+    Infilling in models like Code Llama can provide real-time code suggestions and documentation assistance, making coding more accessible and understandable for novice programmers, thereby potentially reducing the learning curve.
 
-A) Greatly reduce learning curve: Infilling in models like Code Llama can provide real-time code suggestions and documentation assistance, making coding more accessible and understandable for novice programmers, thereby potentially reducing the learning curve.
+  </details>
 
 # 05. Critical Analysis
   - Answer one or more of the following questions: What was overlooked by the authors? What could have been developed further? Were there any errors? Have others disputed the findings?
