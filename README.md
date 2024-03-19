@@ -55,6 +55,10 @@ The major topic of the paper is to introduce these three opensource models to be
 ## Results 
 - Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
 
+- HumanEval: A benchmark comprising Python programming problems to evaluate the effectiveness of code synthesis models in generating function bodies that pass given test cases.
+- MBPP (Mostly Basic Python Problems): A dataset of basic Python programming challenges designed to assess a code generation model's ability to solve elementary coding tasks.
+- APPS (Algorithms and Programming Problems for Synthesis): A collection of complex programming problems from various computer science disciplines, used to test the advanced problem-solving capabilities of code generation models.
+
 1. Python Code Generation: Code Llama passes scores on the Human Eval, MBPP, APPS
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c4c5af2e-8793-4b27-8fbe-5be217e96226)
@@ -69,7 +73,6 @@ The major topic of the paper is to introduce these three opensource models to be
 3. Infilling evaluations
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c514774e-3e71-4a66-be32-b4cfaf8cb7f5)
-
 
 
 
