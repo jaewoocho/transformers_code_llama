@@ -8,6 +8,10 @@
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b59e0111-5b00-4268-ab58-7cc02feb187c)
 
+1. Code Llama
+2. Code Llama -Instruct
+3. Code Llama -Python
+   
 ## Context and Problem Addressed
   - The motivation behind Code Llama stems from the increasing proficiency of large language models (LLMs) in various applications, particularly those involving a blend of natural and domain-specific language. In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent. However, the challenge lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
 ## Approach
