@@ -39,7 +39,7 @@ The major topic of the paper is to introduce these three opensource models to be
 
 1. Python Code Generation: Code Llama passes scores on the Human Eval, MBPP, APPS
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/335983f5-46db-4cda-88b2-ec408934cbec)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/2caaf9b9-debb-4b50-b71d-425c42e5f69d)
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/dd4b63a1-9dbf-4622-896a-9c012cac7464)
 
 2. Multilingual evaluation
