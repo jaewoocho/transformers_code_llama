@@ -25,10 +25,12 @@ The major topic of the paper is to introduce these three opensource models to be
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b3f95eef-e2ab-4bf8-a9b3-257776acc23a)
 
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/fea6a9ff-8135-483e-81c5-0d0fbbc124d5)
 
-3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
 
-4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
+4. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
+
+5. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e05b7b80-c0c2-472a-8fda-c95bfd68c4f7)
 
