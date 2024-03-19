@@ -4,7 +4,6 @@
 https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-code/
 
 # 01. Overview
-  - Five-minute overview providing context, stating the problem the paper is addressing, characterizing the approach, and giving a brief account of how the problem was addressed.
   - The paper, titled "Code Llama: Open Foundation Models for Code," presents Code Llama, a family of large language models specifically designed for code generation and infilling tasks. These models, derived from Llama 2, aim to provide state-of-the-art performance in code-related tasks, including code completion and generation in multiple programming languages, especially Python.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b59e0111-5b00-4268-ab58-7cc02feb187c)
