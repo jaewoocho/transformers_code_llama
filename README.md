@@ -22,19 +22,35 @@ The major topic of the paper is to introduce these three opensource models to be
 
 ## Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
 
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
 
 
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/fea6a9ff-8135-483e-81c5-0d0fbbc124d5)
 
 
-4. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
+3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
 
-5. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
+4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e05b7b80-c0c2-472a-8fda-c95bfd68c4f7)
+
+
+# 02. Discussion Question for the Class: #1
+  - What is the estimated number of parameters in the largest version of the Llama2 language model?
+    - A) 7 Billion parameters
+    - B) 13 Billion parameters
+    - C) 34 Billion parameters
+    - D) 70 Billion parameters
+
+  
+<details>
+    <summary>Answer: </summary>
+  
+    D) 70 Billion parameters
+</details>
+
 
 
 ## Results 
@@ -49,33 +65,13 @@ The major topic of the paper is to introduce these three opensource models to be
 2. Multilingual evaluation
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/9ce81426-31fd-498c-8990-2a85d3bd3f15)
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/f64b9a0c-e149-4f6f-98ff-6561194daa09)
+
 
 3. Infilling evaluations
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/efece19b-b938-43ac-a691-69420dd76f84)
 
-5. Long context evaluations
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/1dee7177-6345-4926-91b1-152bffc0db15)
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e9cf2fda-10e1-4915-87a9-327986c3f2fd)
-
-
-# 02. Discussion Question for the Class: #1
-  - Do you think foundation models primarily offer a benefit in "Efficiency" or "Versatility" when specialized for tasks like code generation?
-    - A) Efficiency
-    - B) Versatility
-    - C) Both Efficiency & Versatility
-
-  
-<details>
-    <summary>Answer: </summary>
-  
-    C) both: The answer is both "Efficiency" and "Versatility". 
-    Foundation models provide efficiency by saving time and computational resources as they are already trained on extensive datasets. 
-    They offer versatility due to their broad knowledge base, which is crucial for tasks that blend natural language processing with specialized domains like coding.
-
-</details>
 
 # 03. Archiecture Overview
   - Prepare a formal pseudocode description of the proposed model, indicate how it differs from previous models
