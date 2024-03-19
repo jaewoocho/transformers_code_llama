@@ -29,7 +29,8 @@ The major topic of the paper is to introduce these three opensource models to be
 3. Long Context Fine-Tuning: The models are fine-tuned to handle contexts significantly longer than the standard lengths, allowing for more complex code synthesis and completion tasks.
 
 4. Instruction Fine-Tuning: Models are further fine-tuned with human instruction data, enhancing their ability to follow user instructions accurately and safely.
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/d561b45c-cb94-4354-8e73-84807e4dcf9a)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e05b7b80-c0c2-472a-8fda-c95bfd68c4f7)
+
 
 ## Results 
 - Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
