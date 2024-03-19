@@ -8,6 +8,7 @@
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b59e0111-5b00-4268-ab58-7cc02feb187c)
 
+The major topic of the paper is to introduce these three opensource models to be specialized in programming and specific tasks
 1. Code Llama
 2. Code Llama -Instruct
 3. Code Llama -Python
