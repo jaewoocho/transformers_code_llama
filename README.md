@@ -25,7 +25,6 @@ The major topic of the paper is to introduce these three opensource models to be
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
 
-
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/fea6a9ff-8135-483e-81c5-0d0fbbc124d5)
 
