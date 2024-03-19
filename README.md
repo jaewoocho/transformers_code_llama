@@ -77,58 +77,18 @@ The major topic of the paper is to introduce these three opensource models to be
 
 
 # 03. Archiecture Overview
-  - Prepare a formal pseudocode description of the proposed model, indicate how it differs from previous models
----
-Algorithm: Code Llama Specialization
-Input: Pretrained Llama 2 model, Code-heavy dataset, Python-heavy dataset, Instruction data
-Output: Specialized Code Llama Models (Code Llama, Code Llama - Python, Code Llama - Instruct)
 
-// Initialize Code Llama with Pretrained Llama 2 Model
-function InitializeCodeLlama(pretrainedModel):
-    CodeLlama = pretrainedModel
-    return CodeLlama
+Code Llama = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning
+Code Llama(Instruct) = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning + Instruction fine-tuning
+Code Llama(Python) = Llama2 (7B, 13B, 34B) + Infilling code training + Python code training + Long context fine-tuning
 
-// Specialize for code generation
-function SpecializeForCode(CodeLlama, codeDataset):
-    for each epoch in trainingEpochs:
-        Train CodeLlama on codeDataset with autoregressive objective
-    return CodeLlama
+Infilling code training:  This step involves training the model to proficiently generate code snippets that logically complete gaps within provided code contexts. This method enhances the model's capability to interpret and fulfill requirements across a diverse range of programming languages, including but not limited to Java, C++, and Python. The primary objective is to refine the model's ability to understand and generate contextually appropriate and syntactically correct code completions.
 
-// Introduce Infilling Capability
-function IntroduceInfilling(CodeLlama, infillingDataset):
-    Train CodeLlama on infillingDataset with both autoregressive and infilling objective
-    return CodeLlama
+Python code training: This specific training regimen focuses on elevating the model's proficiency in Python programming. By exposing the model to an extensive corpus of Python code, the training aims to fine-tune its understanding of Python syntax, conventions, and idiomatic expressions. This targeted training ensures the model demonstrates exceptional capability in generating Python code, facilitating more accurate, efficient, and Pythonic outputs.
 
-// Extend for Long Context Handling
-function LongContextFineTuning(CodeLlama, longContextDataset):
-    Modify CodeLlama to handle larger input sequences
-    Train on longContextDataset
-    return CodeLlama
+Long context fine-tuning: This stage is designed to augment the model's capability to accurately process and respond to prompts of considerable length. Through long context fine-tuning, the model undergoes adaptation to maintain high levels of attention and contextual understanding over extended sequences. This process not only improves the model's responsiveness to intricate prompts but also enhances its ability to apply domain-specific knowledge in generating responses, thereby ensuring relevance and coherence in outputs.
 
-// Fine-Tune with Instruction Data
-function InstructionFineTuning(CodeLlama, instructionDataset):
-    Train CodeLlama on instructionDataset for enhanced instruction-following
-    return CodeLlama
-
-// Main Execution
-Llama2 = LoadPretrainedModel()
-CodeLlama = InitializeCodeLlama(Llama2)
-
-// Code Training
-CodeLlama = SpecializeForCode(CodeLlama, codeDataset)
-
-// Python Specialization
-CodeLlama_Python = SpecializeForCode(CodeLlama, PythonDataset)
-
-// Infilling and Long Context
-CodeLlama = IntroduceInfilling(CodeLlama, infillingDataset)
-CodeLlama = LongContextFineTuning(CodeLlama, longContextDataset)
-CodeLlama_Python = LongContextFineTuning(CodeLlama_Python, longContextDataset)
-
-// Instruction Fine-Tuning
-CodeLlama_Instruct = InstructionFineTuning(CodeLlama, instructionDataset)
-
-return CodeLlama, CodeLlama_Python, CodeLlama_Instruct
+Instruction fine-tuning: The focus of this training phase is to refine the model's ability to comprehend and execute instructions, yielding outputs in a format that maximizes readability and utility for the user. By training the model to interpret instructions with greater precision, this fine-tuning effort ensures that the generated outputs align more closely with user expectations, thereby enhancing the overall user experience. This step is crucial for applications where clarity and adherence to specific output formats are paramount.
 
 ---
 Key Differences from Previous Models:
