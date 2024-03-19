@@ -69,7 +69,8 @@ The major topic of the paper is to introduce these three opensource models to be
 
 3. Infilling evaluations
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/efece19b-b938-43ac-a691-69420dd76f84)
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c514774e-3e71-4a66-be32-b4cfaf8cb7f5)
+
 
 
 
