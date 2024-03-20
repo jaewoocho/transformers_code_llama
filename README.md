@@ -111,16 +111,15 @@ Key Differences from Previous Models:
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c514774e-3e71-4a66-be32-b4cfaf8cb7f5)
 
 
-# 05. Critical Analysis
+# 05. Code Demonstration
+  - Google Colab: https://colab.research.google.com/drive/1xeWWt2jV1yqkxPMTO1U98wX5LQl9d9Pr?usp=sharing 
+
+# 06. Critical Analysis
   - What was overlooked by the authors?
     - In the "Code Llama" paper, AI safety and responsibility areas that seem overlooked include the ethical implications of code generation, like the risk of biased or unsafe code, and a detailed discussion on misuse prevention, particularly for unethical purposes like writing malicious code. Additionally, the paper could benefit from more clarity on the model's decision-making processes for better transparency and trust in AI.
   - What could have been developed further?
-    - For further development, the paper could delve deeper into enhancing the model's robustness against generating insecure code and being exploited in security attacks. Addressing bias mitigation in code generation and the importance of human oversight in deploying such AI models would also be crucial steps toward responsible and ethical use of AI in software development.   
-
-
-# 06. Code Demonstration
-  - Google Colab: https://colab.research.google.com/drive/1xeWWt2jV1yqkxPMTO1U98wX5LQl9d9Pr?usp=sharing 
-    
+    - For further development, the paper could delve deeper into enhancing the model's robustness against generating insecure code and being exploited in security attacks. Addressing bias mitigation in code generation and the importance of human oversight in deploying such AI models would also be crucial steps toward responsible and ethical use of AI in software development.
+      
 # 07. Paper Citation
   - Paper Title: Code Llama: Open Foundation Models for Code
   - Authors: Baptiste Rozière† , Jonas Gehring† , Fabian Gloeckle†,∗ , Sten Sootla† , Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, Jérémy Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, Wenhan Xiong, Alexandre Défossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve†
