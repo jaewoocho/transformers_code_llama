@@ -6,9 +6,6 @@ https://ai.meta.com/research/publications/code-llama-open-foundation-models-for-
 # 01. Overview
   - The paper, titled "Code Llama: Open Foundation Models for Code," presents Code Llama, a family of large language models specifically designed for code generation and infilling tasks. These models, derived from Llama 2, aim to provide state-of-the-art performance in code-related tasks, including code completion and generation in multiple programming languages, especially Python.
 
-![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b564e8e8-d427-4089-90bb-a2efa6a8378c)
-
-
 The major topic of the paper is to introduce these three opensource models that are specialized in programming and specific languages like Python
 1. Code Llama
 2. Code Llama -Instruct
@@ -26,6 +23,7 @@ The major topic of the paper is to introduce these three opensource models that 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
 
 2. Infilling: The models are trained to predict missing parts of a program, beneficial for real-time completion in IDEs or generating in-code documentation.
+
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/fea6a9ff-8135-483e-81c5-0d0fbbc124d5)
 
 
@@ -37,6 +35,8 @@ The major topic of the paper is to introduce these three opensource models that 
 
 
 # 02. Archiecture Overview
+
+![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b564e8e8-d427-4089-90bb-a2efa6a8378c)
 
 **Code Llama = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning**
 
