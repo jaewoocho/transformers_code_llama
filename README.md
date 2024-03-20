@@ -15,8 +15,9 @@ The major topic of the paper is to introduce these three opensource models that 
 3. Code Llama -Python
    
 ## Context and Problem Addressed
-  - The motivation behind Code Llama stems from the increasing proficiency of large language models (LLMs) in various applications, particularly those involving a blend of natural and domain-specific language. In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent. However, the challenge lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
-  - The Problem: Increasing demand for LLMs that are specialized in programming
+  - The motivation: Increasing demand for LLMs that are specialized in programming
+  - Problem: In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent.
+  - Challenge: Lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
 
 
 ## Approach: Solution and Implementation
