@@ -18,10 +18,8 @@ The major topic of the paper is to introduce these three opensource models to be
   - The motivation behind Code Llama stems from the increasing proficiency of large language models (LLMs) in various applications, particularly those involving a blend of natural and domain-specific language. In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent. However, the challenge lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
   - The Problem: A demand for LLMs that are specialized in programming
 
-## Approach
-  - The authors approach this problem by building on the Llama 2 model, applying a series of training and fine-tuning steps. This includes code-training from foundation models, introducing an infilling training regime, and fine-tuning for handling long input contexts. Another key aspect is instruction fine-tuning, which improves the model's safety, helpfulness, and ability to follow instructions.
 
-## Solution and Implementation
+## Approach: Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
