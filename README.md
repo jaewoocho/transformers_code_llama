@@ -14,10 +14,10 @@ The major topic of the paper is to introduce these three opensource models that 
 ## Context and Problem Addressed
   - The motivation: Increasing demand for LLMs that are specialized in programming
   - Problem: In the realm of coding, tasks like program synthesis, code completion, debugging, and documentation generation are becoming more prevalent.
-  - Challenge: Lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
+  - Solutions: Lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
 
 
-## Approach: Brief Overview of Solution and Implementation
+## Training Approaches
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
@@ -34,7 +34,7 @@ The major topic of the paper is to introduce these three opensource models that 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e05b7b80-c0c2-472a-8fda-c95bfd68c4f7)
 
 
-# 02. Archiecture Overview
+# 02. Architecture Overview
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b564e8e8-d427-4089-90bb-a2efa6a8378c)
 
