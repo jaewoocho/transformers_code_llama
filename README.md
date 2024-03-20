@@ -20,7 +20,7 @@ The major topic of the paper is to introduce these three opensource models that 
   - Challenge: Lies in effectively leveraging LLMs for these tasks, especially given the specialized terminology and syntax in programming.
 
 
-## Approach: Solution and Implementation
+## Approach: Brief Overview of Solution and Implementation
 1. Code-Training: Code Llama is initialized with Llama 2 and then trained on a large dataset predominantly consisting of code. This approach significantly improves the model's proficiency in code generation compared to training from scratch.
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/b901f6b4-a994-4418-a0ec-bc6b5b29c608)
