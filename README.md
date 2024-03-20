@@ -60,18 +60,17 @@ Key Differences from Previous Models:
 - Instruction Fine-Tuning: This step is specifically focused on improving the model's capability to follow human instructions accurately and safely, which is a specialized enhancement compared to general-purpose LLMs.
 
 # 03.Discussion Question for the Class: #1
-  - What is the method that completes code 
-  - A) Greatly reduce learning curve
-  - B) No significant impact
-  - C) Increase reliance on AI
-  - D) Potentially hinder learning
+  - Which of the following best describes the purpose of "Python Code Training" in the development of Code Llama models?
+  - A) To specifically enhance the models' ability to generate code snippets in Python, ensuring high proficiency in Python syntax and idiomatic expressions.
+  - B) To improve the models' understanding of natural language instructions, making them more responsive to user queries in Python.
+  - C) To increase the models' overall parameters for better performance across all programming languages, including Python.
+  - D) To focus exclusively on generating Python documentation rather than code.
 <details>
     <summary>Answer: </summary>
     
-    A) Greatly reduce learning curve
+    A) To specifically enhance the models' ability to generate code snippets in Python, ensuring high proficiency in Python syntax and idiomatic expressions.
     
-    Infilling in models like Code Llama can provide real-time code suggestions and documentation assistance, making coding more accessible and understandable for novice programmers, thereby potentially reducing the learning curve.
-
+    The "Python Code Training" phase is designed to fine-tune the model's capability to understand and generate Python code effectively. This includes a deep understanding of Python syntax, as well as the ability to produce Pythonic code that adheres to best practices within the language.
   </details>
   
 # 04. Discussion Question for the Class: #2
