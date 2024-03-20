@@ -61,7 +61,7 @@ Key Differences from Previous Models:
 
 # 03.Discussion Question for the Class: #1
   - Which of the following best describes the purpose of "Python Code Training" in the development of Code Llama models?
-  - A) To specifically enhance the models' ability to generate code snippets in Python, ensuring high proficiency in Python syntax and idiomatic expressions.
+  - A) To specifically enhance the models' ability to generate code snippets in Python, ensuring high proficiency in Python syntax and code completetion.
   - B) To improve the models' understanding of natural language instructions, making them more responsive to user queries in Python.
   - C) To increase the models' overall parameters for better performance across all programming languages, including Python.
   - D) To focus exclusively on generating Python documentation rather than code.
