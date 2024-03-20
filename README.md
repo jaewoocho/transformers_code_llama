@@ -59,7 +59,7 @@ Key Differences from Previous Models:
 - Long Context Fine-Tuning: This step significantly extends the model's ability to process much longer sequences than the standard lengths used in Llama 2, enhancing its applicability to complex code synthesis tasks.
 - Instruction Fine-Tuning: This step is specifically focused on improving the model's capability to follow human instructions accurately and safely, which is a specialized enhancement compared to general-purpose LLMs.
 
-# 03. Question #1
+# 03.Discussion Question for the Class: #1
   - What is the method that completes code 
   - A) Greatly reduce learning curve
   - B) No significant impact
