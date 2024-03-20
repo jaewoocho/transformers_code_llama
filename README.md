@@ -56,7 +56,7 @@ The major topic of the paper is to introduce these three opensource models that 
 Key Differences from Previous Models:
 - Foundation Model Utilization: Unlike models trained from scratch on code, Code Llama starts with a pre-trained Llama 2 model, leveraging its existing natural language understanding and knowledge.
 - Infilling Training: Code Llama introduces infilling training, allowing it to predict missing parts of code, which is not a standard feature in most traditional LLMs.
-- Long Context Fine-Tuning: This step significantly extends the model's ability to process much longer sequences than the standard lengths used in Llama 2, enhancing its applicability to complex code synthesis tasks.
+- Long Context Fine-Tuning: This step significantly extends the model's ability to process much longer sequences than the standard lengths used in Llama 2, enhancing its applicability to complex code synthesis tasks. (All Code Llama models are finetuned to handle long input contexts up to 100,000 tokens, while the Llama 2 model is only able to allow the total number of tokens up to 4096.)
 - Instruction Fine-Tuning: This step is specifically focused on improving the model's capability to follow human instructions accurately and safely, which is a specialized enhancement compared to general-purpose LLMs.
 
 # 03.Discussion Question for the Class: #1
