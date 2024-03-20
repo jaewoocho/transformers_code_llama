@@ -134,5 +134,3 @@ Key Differences from Previous Models:
   - Code Llama access: https://huggingface.co/codellama/CodeLlama-7b-hf
   - How To Use Code Llama: https://www.codecademy.com/article/how-to-use-code-llama
   - Papers Explained 62: Code Llama: https://medium.com/dair-ai/papers-explained-62-code-llama-ee266bfa495f
-
-# 09. Video Recording
