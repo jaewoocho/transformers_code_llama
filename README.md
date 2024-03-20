@@ -86,6 +86,7 @@ Key Differences from Previous Models:
     <summary>Answer: </summary>
   
     D) 70 Billion parameters
+    - On a side note: Code llama has parameters from 7B to 34B
 </details>
 
 ## Results 
