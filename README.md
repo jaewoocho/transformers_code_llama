@@ -89,7 +89,7 @@ Key Differences from Previous Models:
 </details>
 
 ## Results 
-- Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
+- Code Llama shows a state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
 
 - HumanEval: A benchmark comprising Python programming problems to evaluate the effectiveness of code synthesis models in generating function bodies that pass given test cases.
 - MBPP (Mostly Basic Python Problems): A dataset of basic Python programming challenges designed to assess a code generation model's ability to solve elementary coding tasks.
@@ -118,7 +118,7 @@ Key Differences from Previous Models:
   - What was overlooked by the authors?
     - In the "Code Llama" paper, AI safety and responsibility areas that seem overlooked include the ethical implications of code generation, like the risk of biased or unsafe code, and a detailed discussion on misuse prevention, particularly for unethical purposes like writing malicious code. Additionally, the paper could benefit from more clarity on the model's decision-making processes for better transparency and trust in AI.
   - What could have been developed further?
-    - For further development, the paper could delve deeper into enhancing the model's robustness against generating insecure code and being exploited in security attacks. Addressing bias mitigation in code generation and the importance of human oversight in deploying such AI models would also be crucial steps toward responsible and ethical use of AI in software development.
+    - For further development, the paper could go deeper into enhancing the model's robustness against generating insecure code and being exploited in security attacks. Addressing ethical guardrails in code generation and the importance of human oversight in deploying such AI models would also be crucial steps toward responsible and ethical use of AI in software development.
       
 # 07. Paper Citation
   - Paper Title: Code Llama: Open Foundation Models for Code
