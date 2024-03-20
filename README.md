@@ -36,7 +36,45 @@ The major topic of the paper is to introduce these three opensource models that 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/e05b7b80-c0c2-472a-8fda-c95bfd68c4f7)
 
 
-# 02. Discussion Question for the Class: #1
+# 02. Archiecture Overview
+
+**Code Llama = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning**
+
+**Code Llama(Instruct) = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning + Instruction fine-tuning**
+
+**Code Llama(Python) = Llama2 (7B, 13B, 34B) + Infilling code training + Python code training + Long context fine-tuning**
+
+**Infilling code training**:  This step involves training the model to proficiently generate code snippets that logically complete gaps within provided code contexts. This method enhances the model's capability to interpret and fulfill requirements across a diverse range of programming languages, including but not limited to Java, C++, and Python. The primary objective is to refine the model's ability to understand and generate contextually appropriate and syntactically correct code completions.
+
+**Python code training**: This specific training regimen focuses on elevating the model's proficiency in Python programming. By exposing the model to an extensive corpus of Python code, the training aims to fine-tune its understanding of Python syntax, conventions, and idiomatic expressions. This targeted training ensures the model demonstrates exceptional capability in generating Python code, facilitating more accurate, efficient, and Pythonic outputs.
+
+**Long context fine-tuning**: This stage is designed to augment the model's capability to accurately process and respond to prompts of considerable length. Through long context fine-tuning, the model undergoes adaptation to maintain high levels of attention and contextual understanding over extended sequences. This process not only improves the model's responsiveness to intricate prompts but also enhances its ability to apply domain-specific knowledge in generating responses, thereby ensuring relevance and coherence in outputs.
+
+**Instruction fine-tuning**: The focus of this training phase is to refine the model's ability to comprehend and execute instructions, yielding outputs in a format that maximizes readability and utility for the user. By training the model to interpret instructions with greater precision, this fine-tuning effort ensures that the generated outputs align more closely with user expectations, thereby enhancing the overall user experience. This step is crucial for applications where clarity and adherence to specific output formats are paramount.
+
+---
+Key Differences from Previous Models:
+- Foundation Model Utilization: Unlike models trained from scratch on code, Code Llama starts with a pre-trained Llama 2 model, leveraging its existing natural language understanding and knowledge.
+- Infilling Training: Code Llama introduces infilling training, allowing it to predict missing parts of code, which is not a standard feature in most traditional LLMs.
+- Long Context Fine-Tuning: This step significantly extends the model's ability to process much longer sequences than the standard lengths used in Llama 2, enhancing its applicability to complex code synthesis tasks.
+- Instruction Fine-Tuning: This step is specifically focused on improving the model's capability to follow human instructions accurately and safely, which is a specialized enhancement compared to general-purpose LLMs.
+
+# 03. Question #1
+  - What is the method that completes code 
+  - A) Greatly reduce learning curve
+  - B) No significant impact
+  - C) Increase reliance on AI
+  - D) Potentially hinder learning
+<details>
+    <summary>Answer: </summary>
+    
+    A) Greatly reduce learning curve
+    
+    Infilling in models like Code Llama can provide real-time code suggestions and documentation assistance, making coding more accessible and understandable for novice programmers, thereby potentially reducing the learning curve.
+
+  </details>
+  
+# 04. Discussion Question for the Class: #2
   - What is the estimated number of parameters in the largest version of the Llama2 language model?
     - A) 7 Billion parameters
     - B) 13 Billion parameters
@@ -49,8 +87,6 @@ The major topic of the paper is to introduce these three opensource models that 
   
     D) 70 Billion parameters
 </details>
-
-
 
 ## Results 
 - Code Llama exhibits state-of-the-art performance on several code benchmarks. Notably, the Python-specialized version outperforms larger models on Python coding benchmarks. The models also demonstrate robustness in handling long sequences and effectively support infilling tasks. The instruction fine-tuning improves safety and helpfulness without significantly compromising code generation capabilities. In summary, Code Llama represents a significant step forward in the application of LLMs for coding tasks, offering improvements in code generation, infilling, and handling of long input contexts, along with enhanced safety and instruction-following capabilities.
@@ -74,45 +110,6 @@ The major topic of the paper is to introduce these three opensource models that 
 
 ![image](https://github.com/jaewoocho/transformers_code_llama/assets/25238652/c514774e-3e71-4a66-be32-b4cfaf8cb7f5)
 
-
-
-# 03. Archiecture Overview
-
-**Code Llama = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning**
-
-**Code Llama(Instruct) = Llama2 (7B, 13B, 34B) + Infilling code training + Long context fine-tuning + Instruction fine-tuning**
-
-**Code Llama(Python) = Llama2 (7B, 13B, 34B) + Infilling code training + Python code training + Long context fine-tuning**
-
-**Infilling code training**:  This step involves training the model to proficiently generate code snippets that logically complete gaps within provided code contexts. This method enhances the model's capability to interpret and fulfill requirements across a diverse range of programming languages, including but not limited to Java, C++, and Python. The primary objective is to refine the model's ability to understand and generate contextually appropriate and syntactically correct code completions.
-
-**Python code training**: This specific training regimen focuses on elevating the model's proficiency in Python programming. By exposing the model to an extensive corpus of Python code, the training aims to fine-tune its understanding of Python syntax, conventions, and idiomatic expressions. This targeted training ensures the model demonstrates exceptional capability in generating Python code, facilitating more accurate, efficient, and Pythonic outputs.
-
-**Long context fine-tuning**: This stage is designed to augment the model's capability to accurately process and respond to prompts of considerable length. Through long context fine-tuning, the model undergoes adaptation to maintain high levels of attention and contextual understanding over extended sequences. This process not only improves the model's responsiveness to intricate prompts but also enhances its ability to apply domain-specific knowledge in generating responses, thereby ensuring relevance and coherence in outputs.
-
-**Instruction fine-tuning**: The focus of this training phase is to refine the model's ability to comprehend and execute instructions, yielding outputs in a format that maximizes readability and utility for the user. By training the model to interpret instructions with greater precision, this fine-tuning effort ensures that the generated outputs align more closely with user expectations, thereby enhancing the overall user experience. This step is crucial for applications where clarity and adherence to specific output formats are paramount.
-
----
-Key Differences from Previous Models:
-- Foundation Model Utilization: Unlike models trained from scratch on code, Code Llama starts with a pre-trained Llama 2 model, leveraging its existing natural language understanding and knowledge.
-- Infilling Training: Code Llama introduces infilling training, allowing it to predict missing parts of code, which is not a standard feature in most traditional LLMs.
-- Long Context Fine-Tuning: This step significantly extends the model's ability to process much longer sequences than the standard lengths used in Llama 2, enhancing its applicability to complex code synthesis tasks.
-- Instruction Fine-Tuning: This step is specifically focused on improving the model's capability to follow human instructions accurately and safely, which is a specialized enhancement compared to general-purpose LLMs.
-
-# 04. Question #2
-  - How will infilling capability in models like Code Llama impact novice programmers' experience?
-  - A) Greatly reduce learning curve
-  - B) No significant impact
-  - C) Increase reliance on AI
-  - D) Potentially hinder learning
-<details>
-    <summary>Answer: </summary>
-    
-    A) Greatly reduce learning curve
-    
-    Infilling in models like Code Llama can provide real-time code suggestions and documentation assistance, making coding more accessible and understandable for novice programmers, thereby potentially reducing the learning curve.
-
-  </details>
 
 # 05. Critical Analysis
   - What was overlooked by the authors?
